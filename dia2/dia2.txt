@@ -1,0 +1,10 @@
+DIARIO DIA 2:
+
+Lógica del formulario de registro. 
+Funciones de comprobación de los inputs y almacenaje y lectura desde el localStorage.
+Añadidos mensajes de error en el html del registro.
+
+Hecho html de login y su css.
+Hecha gran parte de la lógica del script de Login. 
+Queda pendiente para mañana el checkeo de errores de script login.
+Y Hacer el html tanto del user como del admin.

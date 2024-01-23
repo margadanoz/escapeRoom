@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <div id="logo">
+                <img src="imagenes/logo.jpeg" alt="">
+            </div>
+            <div id="enlaces">
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="login.html" class="enlaceLogin"><li>Login</li></a>
+                    <li>Escape 1</li>
+                    <button type="submit" class="botonLogout">Logout</button>
+                </ul>
+            </div>
+        </div>
+    </header>
+<!-- formulario registro -->
+    <main>
+        <div id="formLogin">
+            <label for="">Nombre de usuario</label>
+            <input type="text" class="form-control" id="nomUsuario">
+            <label for="">Password</label>
+            <input type="text" class="form-control" id="password">
+            <small id="smallCamposVacios" style="display: none;margin-top:3px;">Debes rellenar todos los campos</small>
+            <small id="smallNoHayDatos" style="display: none;margin-top:3px;">Tus datos no coinciden con los de ningún usuario registrado</small>
+            <div id="divSubmit">
+                <button type="submit" id="loginButton">Login</button>
+            </div>
+        </div>
+    </main>
+    <script src="scriptLogin.js"></script>
+</body>
+</html>
+
