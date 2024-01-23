@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('fuente/SpecialElite-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'MiFuentePersonalizada',sans-serif;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-color: #EFDD8D;
+}
+
+#navbar{
+    background-color: #1A535C;
+    width: 100%;
+    height: 150px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+
+#enlaces{
+    display: flex;
+    /* background-color: red; */
+    padding: 10px;
+    margin: 10px;
+}
+
+#enlaces li{
+    display: inline-block;
+    margin: 20px;
+}
+
+#enlaces li:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#logo img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+
+
+
+

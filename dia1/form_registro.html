@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesRegistro.css">
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <div id="logo">
+                <img src="imagenes/logo.jpeg" alt="">
+            </div>
+            <div id="enlaces">
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <li>Login</li>
+                    <li>Escape 1</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+<!-- formulario registro -->
+    <main>
+        <div id="formRegistro">
+            <label for="">Nombre de usuario</label>
+            <input type="text" class="form-control">
+            <label for="">Password</label>
+            <input type="text" class="form-control">
+            <label for="">Repite el password</label>
+            <input type="text" class="form-control">
+            <div id="divRolUsuario">
+                <label for="rolUsuario">Elige tu rol:</label>
+                <input type="radio" name="rolUsuario">Admin</input>
+                <input type="radio" name="rolUsuario">Usuario</input>
+            </div>
+            <div id="divRadioButton">
+                <label for="mayorEdad">Eres mayor de edad?</label>
+                <input type="radio" name="mayorEdad">Sí</input>
+                <input type="radio" name="mayorEdad">No</input>
+                <!-- <small>Al confirmar tu mayoría de edad tendrás acceso a contenido explícito</small> -->
+            </div>
+            <div id="divSubmit">
+                <button type="submit" id="submitButton">Registrarse</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

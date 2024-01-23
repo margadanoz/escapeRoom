@@ -1,0 +1,5 @@
+DIARIO DIA 1:
+
+Brainstorming sobre las primeras ideas acerca de la temática de los escapes.
+Esquema de organización de la página principal y triaje de paleta de colores y fuente.
+Elaboración de parte del home, del formulario de registro y del login con sus correspondientes html y css.
