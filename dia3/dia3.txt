@@ -1,0 +1,11 @@
+DIARIO DIA 3:
+
+Endreçament dels arxius creant carpetes scripts i views.
+Incorporació del array per guardar partides per finalitzar confecció d'objecte jugador a registre.
+Corregits errors amb els missatges dels smalls (d'errors) al login.
+Creada lògica al scriptJugadorConectado, que està present a cada pàgina i s'encarrega de la lògica
+per mostrar botó de logout a cada pàgina quan canviem de pàgina,ocultar enllaços de registro i login (quan tenim estat conectado a 1),
+i mostrar les pàgines per l'edició del perfil.
+Afegida lògica logout a scriptJugadorConectado.
+FINALITZADA TOTA LA PART DE REGISTRE, LOGIN I LOGOUT.
+Finalitzat part d'edició de perfil d'usuari (almenys per ara).

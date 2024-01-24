@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <div id="logo">
+                <img src="imagenes/logo.jpeg" alt="">
+            </div>
+            <div id="enlaces">
+                <ul>
+                    <a href="views/form_registro.html" class="enlaceRegistro"><li class="enlaceRegistro">Registro</li></a>
+                    <a href="views/login.html" class="enlaceLogin"><li class="enlaceLogin">Login</li></a>
+                    <a href="views/pagina_admin.html" class="perfilUsuarioAdmin"><li class="perfilUsuarioAdmin">Perfil admin</li></a>
+                    <!-- el enlace ver usuarios solo estará disponible para el rol de administrador, para que pueda eliminarlos -->
+                    <a href="#" class="enlaceVerUsuarios"><li class="enlaceVerUsuarios">Ver usuarios</li></a>
+                    <a href="views/pagina_usuario.html" class="perfilUsuario"><li class="perfilUsuario">Perfil usuario</li></a>
+                    <li>Escape 1</li>
+                    <button type="submit" class="botonLogout">Logout</button>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+    </main>
+    <!-- script per veure si tenim un jugador conectat i per tant ocultar els enllaços que ja no es necessiten -->
+    <script src="scripts/scriptJugadorConectado.js"></script>
+</body>
+</html>
