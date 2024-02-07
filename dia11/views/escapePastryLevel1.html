@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/escapePastryLevel1.css">
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <div id="logo">
+                <img src="../imagenes/logo.jpeg" alt="">
+            </div>
+            <div id="enlaces">
+                <ul>
+                    <a href="../index.html" class="enlaceHome"><li class="enlaceHome">Home</li></a>
+                    <a href="form_registro.html" class="enlaceRegistro"><li class="enlaceRegistro">Registro</li></a>
+                    <a href="login.html" class="enlaceLogin"><li class="enlaceLogin">Login</li></a>
+                    <a href="pagina_admin.html" class="perfilUsuarioAdmin"><li class="perfilUsuarioAdmin">Perfil admin</li></a>
+                    <!-- el enlace ver usuarios solo estará disponible para el rol de administrador, para que pueda eliminarlos -->
+                    <a href="ver_usuarios.html" class="enlaceVerUsuarios"><li class="enlaceVerUsuarios">Ver usuarios</li></a>
+                    <a href="pagina_usuario.html" class="perfilUsuario"><li class="perfilUsuario">Perfil usuario</li></a>
+                    <button type="submit" class="botonLogout">Logout</button>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- Para que se cargue cuando no entre un jugador conectado -->
+        <div id="explicacionJuego">
+            
+                <img src="../imagenes/escapeCocina/cocineroLevel1.png" alt=""><br>
+
+            <!-- Aqui irán bien un video o bien imagenes explicativas
+            de en qué consiste la prueba -->
+            <p>¿Estás listo para tu primer día en ésta cocina?</p>
+            <p>Regístrate para poder ingresar al escape!</p>
+        </div>
+        <div class="cronometro">
+            <h1 class="cronometro"></h1>
+            <!-- aquí irá corriendo el crono -->
+        </div>
+        <!-- Per botons de començar nova partida o carregarne d'anterior -->
+        <div class="botonesPartida">
+                <button type="submit" id="nuevaPartida">Nueva Partida</button>
+                <button type="submit" id="cargarPartida">Cargar Partida</button>
+                <button id="guardarPartida">Guardar Partida</button>
+                <h2 class="cronometro"></h2>
+        </div>
+        <div id="informaGanador">
+            <h4 class="informaGanador">Enhorabuena, ahora ya puedes pasar al nivel 2. Guarda y accede.</h4>
+            <button id="pasarLevel2">Ir a Level 2</button>
+        </div>
+        <!-- TRAINING PARA ACCEDER AL PRIMER NIVEL1 -->
+        <div id="trainingPastry">
+            
+            <div class="panelLetras">
+                <!-- aqui cse crearan kos divs -->
+            </div>
+            <!-- Mostrar mensajes de error -->
+            <div id="divGuardarPartida">
+                <button id="quitarLetra">Quitar ultima letra</button>
+                <button id="pista">Pista</button>
+                <div id="divPista">
+                    <!-- aquí dentro aparecerá la pista, lo generamos el contenido desde el script -->
+                </div>
+            </div>
+        </div>
+                    
+        <div id="anagramaCompletado">
+            <!-- Aquí aparecerán las letras en el orden en que se clicken -->
+        </div>
+        
+    </main>
+    <!-- script per veure si tenim un jugador conectat i per tant ocultar els enllaços que ja no es necessiten -->
+    <script src="../scripts/scriptJugadorConectado.js"></script>
+    <script src="../scripts/escapePastryLevel1.js"></script> 
+</body>
+</html>

@@ -1,0 +1,12 @@
+DIARIO DIA DE DIA 4 A DIA 11:
+
+Creació de video i recursos com imatges per l'EscapeRoom.
+Correcció d'errors als scripts anteriorment creats de registre, login...
+Creació dels htmls, css i scripts de la primera prova del escape, de la segona
+prova del Escape. Proves sobre els jocs, correcció d'errors i ajust de dificultat.
+Creació de html, css i script per la lògica de la pàgina que controla l'accés als nivells.
+
+
+
+
+

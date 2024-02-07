@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/escapePastryLevel2.css">
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <div id="logo">
+                <img src="../imagenes/logo.jpeg" alt="">
+            </div>
+            <div id="enlaces">
+                <ul>
+                    <a href="../index.html">Home</a>
+                    <a href="views/form_registro.html" class="enlaceRegistro"><li class="enlaceRegistro">Registro</li></a>
+                    <a href="views/login.html" class="enlaceLogin"><li class="enlaceLogin">Login</li></a>
+                    <a href="pagina_admin.html" class="perfilUsuarioAdmin"><li class="perfilUsuarioAdmin">Perfil admin</li></a>
+                    <!-- el enlace ver usuarios solo estará disponible para el rol de administrador, para que pueda eliminarlos -->
+                    <a href="ver_usuarios.html" class="enlaceVerUsuarios"><li class="enlaceVerUsuarios">Ver usuarios</li></a>
+                    <a href="pagina_usuario.html" class="perfilUsuario"><li class="perfilUsuario">Perfil usuario</li></a>
+                    <a href="escapePastryLevel1.html" class="enlaceEscapeCocina"><li>Escape cocina</li></a>
+                    <button type="submit" class="botonLogout">Logout</button>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div id="divIniciarJuego">
+            <button id="iniciarJuego">Start</button>
+            <button id="reintentar">Reintentar</button>
+            <button id="guardarPartida">Guardar</button>
+            <button id="pasarSiguienteNivel">Pasar a nivel 3</button>
+            <!-- <button id="cargarPartida">Cargar partida</button> -->
+        </div>
+        <div id="gameOver">
+            <img src="../imagenes/escapeCocina/gameOver.jpeg" alt="" id="imagenGameOver">
+        </div>
+        <div id="imagenesJuego">
+            <h5 id="comboNecesario">COMBO!!!</h5>
+            <h1 id="enemigoEliminado">ENEMIGO ELIMINADO!</h1>
+        <!-- ponemos class para poder cogerlos todos a la vez si lo necesitamos -->
+        <div id="imagenesMalas">
+            <!-- Aún por determinar recursos a emplear -->
+            <img src="../imagenes/escapeCocina/fuegoMalo.jpeg" alt="" id="fuegoMalo" class="imagenesMalas">
+            <img src="../imagenes/escapeCocina/chef2.jpeg" alt="" id="chefCabreado" class="imagenesMalas">
+            <img src="../imagenes/escapeCocina/cantandoComandas.jpeg" alt="" id="chefCantando" class="imagenesMalas">
+            <img src="../imagenes/escapeCocina/chefCabreado.jpeg" alt="" id="chefCabreado2" class="imagenesMalas">
+
+        </div>
+
+        <div class="imagenesBuenas" id="divImagesBuenas">
+            <img src="../imagenes/escapeCocina/tirita.jpeg" alt="" id="tirita">
+            <img src="../imagenes/escapeCocina/tiramisu.jpeg" alt="" id="tiramisu">
+            <img src="../imagenes/escapeCocina/huevon.jpeg" alt="" id="huevon">
+            <img src="../imagenes/escapeCocina/cuchilloBueno.jpeg" alt="" id="cuchilloBueno">
+            <img src="../imagenes/escapeCocina/fuegoBueno.jpeg" alt="" id="fuegoBueno">
+        </div>
+        </div>
+        <div id="recursosJuego">
+            <h1 id="datosFinales">Tu puntuación final es de: <span id="puntuacionHTML">0</span></h1>
+            <span id="cronometro"></span>
+            <div id="recursosSalud">
+                <h2>Tiritas disponibles: <span id="numeroTiritas">3</span></h2>
+                <h2>Golpes recibidos:<span id="golpesRecibidos">0</span></h2>
+            </div>
+        </div>
+    </main>
+    <!-- script per veure si tenim un jugador conectat i per tant ocultar els enllaços que ja no es necessiten -->
+    <script src="../scripts/scriptJugadorConectado.js"></script>
+    <script src="../scripts/escapePastryLevel2.js"></script>
+</body>
+</html>
+
